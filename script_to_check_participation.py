@@ -10,7 +10,6 @@ with open('progate.txt') as file:
     for line in lines:
         count += 1
         result = re.findall(r'(\d+) %',line)
-        print(result)
         if result[0]=='100':
             java += 1
         if result[1]=='100':
